@@ -1,0 +1,6 @@
+body {
+  width: 100%;
+  height: 100vh;
+  /* Using the margin: 0 property/value pair will get rid of the horizontal scroll bar (see below line)*/
+  margin: 0;
+}
