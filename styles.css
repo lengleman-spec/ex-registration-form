@@ -5,6 +5,26 @@ body {
   margin: 0;
   background-color: #1b1b32;
   color: #f5f6f7;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  margin: 0 auto; /* to center form element */
+  min-width: 300px;
+  max-width: 500px;
+  width: 60vw;
+}
+
+fieldset {
+  border: none; /* removes default border of fieldset element */
+  padding: 2rem 0;
 }
 
 label {
