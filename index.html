@@ -15,21 +15,21 @@
       <fieldset>
         <label for="first-name"
           >Enter Your First Name:
-          <input type="text" name="" id="first-name" required />
+          <input type="text" name="first-name" id="first-name" required />
         </label>
         <label for="last-name"
           >Enter Your Last Name:
-          <input type="text" name="" id="last-name" required />
+          <input type="text" name="last-name" id="last-name" required />
         </label>
         <label for="email"
           >Enter Your Email:
-          <input type="email" name="" id="email" required />
+          <input type="email" name="email" id="email" required />
         </label>
         <label for="new-password"
           >Create New Password:
           <input
             type="password"
-            name=""
+            name="password"
             id="new-password"
             required
             pattern="[a-z0-5]{8,}"
@@ -41,11 +41,16 @@
       <fieldset>
         <legend>Account type (required)</legend>
         <label for="personal-account">
-          <input type="radio" name="" id="personal-account" checked />
+          <input
+            type="radio"
+            name="personal-account"
+            id="personal-account"
+            checked
+          />
           Personal
         </label>
         <label for="business-account">
-          <input type="radio" name="" id="business-account" />
+          <input type="radio" name="business-account" id="business-account" />
           Business
         </label>
       </fieldset>
@@ -53,7 +58,12 @@
       <!--  SECTION 3 - TERMS AND CONDITIONS   -->
       <fieldset>
         <label for="terms-and-conditions">
-          <input type="checkbox" id="terms-and-conditions" required />
+          <input
+            type="checkbox"
+            id="terms-and-conditions"
+            name="terms"
+            required
+          />
           I accept the <a href="">terms and conditions</a>
         </label>
       </fieldset>
@@ -62,17 +72,17 @@
       <fieldset>
         <label for="profile-picture"
           >Upload a profile picture:
-          <input type="file" id="profile-picture" />
+          <input type="file" id="profile-picture" name="profile-picture" />
         </label>
         <label for="age"
           >Input your age (years):
-          <input type="number" id="age" min="13" max="120" />
+          <input type="number" id="age" name="age" min="13" max="120" />
           <!-- min/max properties in this case sets a lock on the ages, so a user must be at least 13yo and no older than 120yo -->
         </label>
 
         <label for="referral"
           >How did you hear about us?
-          <select name="" id="referral">
+          <select name="referral" id="referral">
             <option value="">(select one)</option>
             <option value="1">freeCodeCamp News</option>
             <option value="2">freeCodeCamp YouTube Channel</option>
@@ -84,7 +94,7 @@
         <label for="bio"
           >Provide a bio:
           <textarea
-            name=""
+            name="bio"
             id="bio"
             rows="3"
             cols="30"
@@ -93,7 +103,7 @@
         </label>
       </fieldset>
 
-      <input type="submit" name="" id="" value="Submit" />
+      <input type="submit" name="submit" id="submit" value="Submit" />
     </form>
   </body>
 </html>
