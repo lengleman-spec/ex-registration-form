@@ -74,3 +74,7 @@ input[type="submit"] {
 input[type="file"] {
   padding: 1px 2px; /* targets the input 'file' type and adds more padding to the default that the browser automatically adds */
 }
+
+a {
+  color: #dfdfe2;
+}
